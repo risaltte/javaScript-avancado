@@ -61,10 +61,31 @@
 
     <script src="./js/app/models/Negociacao.js"></script>    
     <script src="./js/app/controllers/NegociacaoController.js"></script>
+    <script src="./js/app/helpers/DateHelper.js"></script>
+    <script src="./js/app/models/ListaNegociacoes.js"></script>
 
     <script>
         // Instanciar Controller
         let negociacaoController = new NegociacaoController();
+    </script>
+
+    <script>
+        function exibeNoConsole(lista) {
+            lista.forEach(item => console.log(item));
+        }
+
+        let listaDeNomes1 = ['Flávio', 'Rogers', 'Júlia'];
+        let listaDeNomes2 = ['Vieira', 'Fernanda', 'Gerson'];
+
+        let listas = [];
+        listas = listas.concat(listaDeNomes1, listaDeNomes2);
+
+        exibeNoConsole(listas);
+
+        // let listaDeNomes1 = ['Flávio', 'Rogers', 'Júlia'];
+        // exibeNoConsole(listaDeNomes1);
+        // let listaDeNomes2 = ['Vieira', 'Fernanda', 'Gerson'];
+        // exibeNoConsole(listaDeNomes2);
     </script>
 </body>
 
