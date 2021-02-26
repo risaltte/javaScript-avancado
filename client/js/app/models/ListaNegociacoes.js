@@ -14,6 +14,6 @@ class ListaNegociacoes {
 
         // programação defensiva. Retorna uma cópia para que as negociações 
         // não possam ser alteradas 
-        return [].concat($this._negociacoes);
+        return [].concat(this._negociacoes);
     }
 }
